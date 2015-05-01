@@ -18,6 +18,25 @@ program happy_jinming;
 					w[i]:=w[i]*v[i];
 				end;
 		end;
+	procedure zhengli;
+		var
+			i,j,temp:integer;
+			var:boolean;
+		begin
+			for i:=1 to m-1 do
+				for j:=i+1 to m do
+					begin
+						if w[i]<w[j] then
+							begin
+								temp:=w[i];
+								w[i]:=w[j];
+								w[j]:=temp;
+								temp:=v[i];
+								v[i]:=v[j];
+								v[j]:=temp;
+							end;
+					end;
+		end;
 	procedure dig(i:integer);
 		begin
 		        while i<=m do
@@ -37,6 +56,7 @@ program happy_jinming;
 		end;
 	begin
 		init;
+		zhengli;
 		dig(1);
 		write(tmp);
 	end.
