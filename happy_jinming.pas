@@ -46,8 +46,8 @@ program happy_jinming;
 					money:=money+v[i];end;
 					dig(i+1);inc(i);
                                         if flag then begin
-                                        sum:=sum-w[i];
-					money:=money-v[i];end;
+                                        sum:=sum-w[i-1];
+					money:=money-v[i-1];end;
 				end;
 			if sum>tmp then tmp:=sum;
 		end;
