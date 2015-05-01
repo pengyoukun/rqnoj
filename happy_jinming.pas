@@ -40,11 +40,12 @@ program happy_jinming;
 		begin
 		        while i<=m do
 				begin
-                                        if money+v[i]<=N then begin
+				flag:=money+v[i]<=N
+                                        if flag then begin
 					sum:=sum+w[i];
 					money:=money+v[i];end;
 					dig(i+1);inc(i);
-                                        if money<=N then begin
+                                        if flag then begin
                                         sum:=sum-w[i];
 					money:=money-v[i];end;
 				end;
