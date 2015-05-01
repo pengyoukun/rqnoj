@@ -21,6 +21,7 @@ program happy_jinming;
 	procedure zhengli;
 		var
 			i,j,temp:integer;
+			var:boolean;
 		begin
 			for i:=1 to m-1 do
 				for j:=i+1 to m do
