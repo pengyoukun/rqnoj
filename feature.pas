@@ -7,3 +7,5 @@ rqnoj.sublime-workspace
 
 
 Test merge.
+
+What's wrong with Merging?:)
